@@ -1,0 +1,20 @@
+# Environment files
+.env
+
+# Kaggle credentials
+kaggle.json
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# Data
+data/
+*.csv
+
+# Streamlit
+.streamlit/
+
+# Logs
+*.log
