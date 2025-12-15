@@ -46,8 +46,7 @@ Accurate rainfall prediction plays a critical role in agriculture, water resourc
 1. Create an environment file:
    ```bash
    cp .env.example .env
-````
-
+   ```
 2. Add your Kaggle credentials to `.env`:
 
    ```env
@@ -55,8 +54,6 @@ Accurate rainfall prediction plays a critical role in agriculture, water resourc
    KAGGLE_KEY=your_kaggle_api_key
    KAGGLE_DATASET=dataset-owner/dataset-name
    ```
-
-> ⚠️ Do not commit `.env` files or Kaggle credentials to version control.
 
 ---
 
