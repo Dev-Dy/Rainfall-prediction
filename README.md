@@ -1,74 +1,54 @@
-```markdown
+````markdown
 # 🌧️ Rainfall Prediction System
 
-A production-ready **machine learning project in Python** that predicts rainfall using historical weather data sourced from **Kaggle**. The project follows industry best practices such as modular code structure, environment-based configuration, automated dataset download, and an interactive **Streamlit** web interface.
+A **production-ready machine learning application** built using **Python** to predict rainfall based on historical weather data sourced from **Kaggle**. The project follows **industry best practices** such as environment-based configuration, modular code design, automated dataset handling, and an interactive **Streamlit web interface**.
 
 ---
 
-## 🚀 Features
+## 📌 Overview
 
-- Rainfall prediction using machine learning
-- Automated dataset download from Kaggle using API
-- Secure environment variable management
-- Modular and scalable codebase
-- Interactive web application using Streamlit
-- Reproducible and interview-ready setup
+Accurate rainfall prediction plays a critical role in agriculture, water resource management, and disaster preparedness. This project applies **machine learning techniques** to analyze historical rainfall data and generate predictions in a reproducible and scalable manner.
 
 ---
 
-## 🏗️ Project Structure
+## 🚀 Key Features
 
-```
+- Machine learning–based rainfall prediction  
+- Automated dataset download using Kaggle API  
+- Secure configuration through environment variables  
+- End-to-end ML pipeline (data preprocessing → training → evaluation)  
+- Interactive web interface built with Streamlit  
+- Production-ready, ATS- and interview-friendly implementation  
 
-Rainfall-prediction/
-│
-├── data/                     # Kaggle dataset (auto-downloaded)
-│
-├── src/
-│   ├── **init**.py
-│   ├── kaggle_loader.py      # Kaggle dataset download & caching
-│   ├── data_preprocessing.py # Data cleaning and preprocessing
-│   ├── train_model.py        # Model training
-│   ├── evaluate.py           # Model evaluation
-│
-├── streamlit_app.py          # Streamlit web interface
-├── main.py                   # Command-line entry point
-├── requirements.txt          # Project dependencies
-├── .env.example              # Environment variables template
-├── .gitignore
-└── README.md
+---
 
-````
+## 🛠️ Technology Stack
+
+- **Python**
+- **Pandas, NumPy** – Data processing
+- **scikit-learn** – Machine learning
+- **Kaggle API** – Dataset integration
+- **Streamlit** – Web application
+- **python-dotenv** – Environment management
 
 ---
 
 ## 📊 Dataset
 
 - Source: **Kaggle**
-- Historical rainfall data used for prediction
-- Automatically downloaded and cached locally on first run
+- Contains historical rainfall data used for training and evaluation
+- Dataset is automatically downloaded and cached locally during runtime
 
 ---
 
-## 🛠️ Tech Stack
+## 🔐 Environment Configuration
 
-- Python
-- Pandas, NumPy
-- scikit-learn
-- Kaggle API
-- Streamlit
-- python-dotenv
-
----
-
-## 🔐 Environment Setup
-
-1. Copy the environment template:
+1. Create an environment file:
    ```bash
    cp .env.example .env
 ````
 
-2. Update `.env` with your Kaggle credentials:
+2. Add your Kaggle credentials to `.env`:
 
    ```env
    KAGGLE_USERNAME=your_kaggle_username
@@ -76,61 +56,60 @@ Rainfall-prediction/
    KAGGLE_DATASET=dataset-owner/dataset-name
    ```
 
-⚠️ Do not commit `.env` or Kaggle credentials.
+> ⚠️ Do not commit `.env` files or Kaggle credentials to version control.
 
 ---
 
 ## ▶️ How to Run the Project
 
-### 1️⃣ Clone the repository
+### Step 1: Clone the repository
 
 ```bash
 git clone https://github.com/Dev-Dy/Rainfall-prediction
 cd Rainfall-prediction
 ```
 
-### 2️⃣ Create and activate virtual environment (recommended)
+### Step 2: Create and activate a virtual environment (recommended)
 
 ```bash
 python -m venv venv
-source venv/bin/activate      # Linux/Mac
+source venv/bin/activate      # Linux / macOS
 venv\Scripts\activate         # Windows
 ```
 
-### 3️⃣ Install dependencies
+### Step 3: Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4️⃣ Run the ML pipeline
+### Step 4: Run the machine learning pipeline
 
 ```bash
 python main.py
 ```
 
-### 5️⃣ Run the Streamlit app
+This will:
+
+* Download the dataset from Kaggle (if not already present)
+* Preprocess the data
+* Train the machine learning model
+* Display evaluation metrics
+
+### Step 5: Run the Streamlit web application
 
 ```bash
 streamlit run streamlit_app.py
-```
-
-Open in browser:
-
-```
-http://localhost:8501
-```
-
 ---
 
-## 🧠 Model Workflow
+## 🧠 Machine Learning Workflow
 
-1. Download dataset from Kaggle
-2. Preprocess and clean data
-3. Encode features
-4. Train machine learning model
-5. Evaluate performance
-6. Predict rainfall via Streamlit UI
+* Dataset retrieval from Kaggle
+* Data cleaning and preprocessing
+* Feature encoding
+* Model training using Random Forest
+* Model evaluation with standard metrics
+* Real-time prediction through Streamlit UI
 
 ---
 
@@ -138,5 +117,4 @@ http://localhost:8501
 
 This project is open-source and intended for educational and demonstration purposes.
 
-```
 ```
