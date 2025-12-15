@@ -1,4 +1,4 @@
-````markdown
+
 # 🌧️ Rainfall Prediction System
 
 A **production-ready machine learning application** built using **Python** to predict rainfall based on historical weather data sourced from **Kaggle**. The project follows **industry best practices** such as environment-based configuration, modular code design, automated dataset handling, and an interactive **Streamlit web interface**.
